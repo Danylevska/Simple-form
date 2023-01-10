@@ -36,3 +36,26 @@ color: #fff;
 font-size: 16px;
 border: none;
 border-radius: 5px;}
+
+button:hover{border: 2px solid grey;
+    box-shadow: 0px 1px 7px 2px #000000bf;;}
+
+.overlay{position:absolute;
+    z-index: 999;
+    background: white;
+    width: 100%;
+    height: 100%;
+    animation: reveal 1s ease-in forwards;
+    transform-origin: bottom;}
+    
+    @keyframes reveal{
+        from{transform: scaleY(1);}
+        to{transform: scaleY(0);}
+    }
+    
+    .wrapper{animation: growIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    transform: scale(.4);}
+    
+    @keyframes growIn {
+        to{transform: scale(1);}
+    }
